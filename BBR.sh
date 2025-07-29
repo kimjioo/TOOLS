@@ -1,5 +1,5 @@
 # 创建并写入 BBR 配置
-sudo tee /etc/sysctl.d/99-bbr.conf <<EOF
+sudo tee /etc/sysctl.conf <<EOF
 net.core.default_qdisc=fq
 net.ipv4.tcp_congestion_control=bbr
 EOF
